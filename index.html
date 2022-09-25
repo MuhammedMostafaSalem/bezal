@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bezal .</title>
+    <!-- link file css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link file font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link file fonts-google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Fascinate&family=Kdam+Thmor+Pro&family=Nuosu+SIL&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Roboto+Condensed:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- link file bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- start settings box -->
+<div class="settings-box d-flex align-items-start">
+    <div class="toggle-settings">
+        <i class="fa-solid fa fa-gear"></i>
+    </div>
+
+
+    <div class="settings-container">
+        <div class="option-box">
+            <h4 class="text-capitalize">colors</h4>
+            <ul class="colors-list text-align-center">
+                <li class="active" data-color="#ffff00"></li>
+                <li data-color="#008000"></li>
+                <li data-color="#800080"></li>
+                <li data-color="#ffa500"></li>
+                <li data-color="#0099cc"></li>
+                <li data-color="#ff6347"></li>
+                <li data-color="#000"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- end settings box -->
+
+
+<!--  start up button -->
+<button id="upBtn" onclick="scrollToTop();" class="btn bg-primary text-light rounded-circle col-lg-12 col-md-6 col-sm-3">
+    <i class='fas fa fa-arrow-up'></i>
+</button>
+<!--  end up button -->
+
+
+<!-- start navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="imgs/logo-light.png" width="100" height="40" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapseExample">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3 active text-light" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3 active text-light" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3 active text-light" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3 active text-light" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3 active text-light" href="#customers">Costomers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3 active text-light" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3 active text-light" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="social-media">
+                <i class="fa-brands fa fa-facebook"></i>
+                <i class="fa-brands fa fa-twitter"></i>
+                <i class="fa-brands fa fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- end navbar-->
+
+
+
+<!-- start section home -->
+<div id="home">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators indicator">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="content d-flex justify-content-center aling-items-center">
+                    <div class="upper"></div>
+                    <img src="imgs/bg-image-28.jpg" class="img-fluid w-100 h-100" alt="...">
+                    <div class="on text-center text-capitalize text-light">
+                        <h1>get awesome<span class="text-primary">.</span></h1>
+                        <p class="fs-5">we are an innovative company making digital stuff<span class="text-primary">.</span></p>
+                        <p>
+                            <a href="#" class="btn btn-primary one">Read More</a>
+                            <a href="#" class="btn btn-outline-light ">Contact</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content d-flex justify-content-center aling-items-center">
+                    <div class="upper"></div>
+                    <img src="imgs/bg-image-29.jpg" class="img-fluid w-100 h-100" alt="...">
+                    <div class="on text-center text-capitalize text-light">
+                        <h1>create with bezel<span class="text-primary">.</span></h1>
+                        <p class="fs-5">we help ambitious companies create new value<span class="text-primary">.</span></p>
+                        <p>
+                            <a href="#" class="btn btn-primary one">Read More</a>
+                            <a href="#" class="btn btn-outline-light ">Contact</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content d-flex justify-content-center aling-items-center">
+                    <div class="upper"></div>
+                    <img src="imgs/bg-image-30.jpg" class="img-fluid w-100 h-100" alt="...">
+                    <div class="on text-center text-capitalize text-light">
+                        <h1>create with bezel<span class="text-primary">.</span></h1>
+                        <p class="fs-5">we help ambitious companies create new value<span class="text-primary">.</span></p>
+                        <p>
+                            <a href="#" class="btn btn-primary text-capitalize one">read more</a>
+                            <a href="#" class="btn btn-outline-light text-capitalize">contact</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev prev active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- end section home -->
+
+
+
+
+<!-- start section about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="cont text-center active">
+                    <h2 class="text-uppercase fs-5">who we are</h2>
+                    <p class="text-capitalize">
+                        we are an innovative company. We develop and <span> design
+                    </span> for
+                    </p>
+                    <p class="text-capitalize">
+                        costumers around the world. Our clients are some of the most forward-looking companies in the world.
+                    </p>
+                    <a href="#" class="btn btn-outline-light text-capitalize">read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end section about -->
+
+
+
+
+<!-- start section team -->
+<div id="team" class="text-center">
+    <div class="container">
+        <h1>c</h1>
+        <h2 class="text-capitalize">creative team</h2>
+        <p>we are digital thinkers</p>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 ">
+                <div class="four">
+                    <img src="imgs/team-1.jpg" class="img-fluid" alt="">
+                    <div class="hover">
+                        <div class="up">
+                            <i class="fa-brands fa fa-facebook"></i>
+                            <i class="fa-brands fa fa-twitter"></i>
+                            <i class="fa-brands fa fa-linkedin"></i>
+                        </div>
+                        <div class="down">
+                            <h3>Luke Cage</h3>
+                            <h4>Founder & CEO</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 ">
+                <div class="four">
+                    <img src="imgs/team-2.jpg" class="img-fluid" alt="">
+                    <div class="hover">
+                        <div class="up">
+                            <i class="fa-brands fa fa-facebook"></i>
+                            <i class="fa-brands fa fa-twitter"></i>
+                            <i class="fa-brands fa fa-linkedin"></i>
+                        </div>
+                        <div class="down">
+                            <h3>Luke Cage</h3>
+                            <h4>Founder & CEO</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 ">
+                <div class="four">
+                    <img src="imgs/team-3.jpg" class="img-fluid" alt="">
+                    <div class="hover">
+                        <div class="up">
+                            <i class="fa-brands fa fa-facebook"></i>
+                            <i class="fa-brands fa fa-twitter"></i>
+                            <i class="fa-brands fa fa-linkedin"></i>
+                        </div>
+                        <div class="down">
+                            <h3>Luke Cage</h3>
+                            <h4>Founder & CEO</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 ">
+                <div class="four">
+                    <img src="imgs/team-4.jpg" class="img-fluid" alt="">
+                    <div class="hover">
+                        <div class="up">
+                            <i class="fa-brands fa fa-facebook"></i>
+                            <i class="fa-brands fa fa-twitter"></i>
+                            <i class="fa-brands fa fa-linkedin"></i>
+                        </div>
+                        <div class="down">
+                            <h3>Luke Cage</h3>
+                            <h4>Founder & CEO</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end section team -->
+
+
+
+
+<!-- start section services -->
+<div id="services">
+    <div class="parent">
+        <div class="container">
+            <div class="row text-center text-uppercase">
+                <div class="col-lg-2 col-md-4 col-sm-6 child">
+                    <h4 class="text-uppercase text-light">stunning design</h4>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 child">
+                    <h4 class="text-uppercase text-light">time saver</h4>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 child">
+                    <h4 class="text-uppercase text-light">clean code</h4>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 child">
+                    <h4 class="text-uppercase text-light">customizable</h4>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 child">
+                    <h4 class="text-uppercase text-light">perfect layout</h4>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 child">
+                    <h4 class="text-uppercase text-light">retina ready</h4>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class=" text-light left">
+                        <h3>w</h3>
+                        <h4>What We Do.</h4>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ipsam ullam incidunt itaque nemo omnis temporibus totam quibusdam repellat vero, recusandae excepturi dignissimos velit et alias amet, quia facilis perferendis.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="list">
+                        <ul>
+                            <li class="text-capitalize text-light"><i class="far fa fa-check-circle"></i> research</li>
+                            <li class="text-capitalize text-light"><i class="far fa fa-check-circle"></i> opportunity analysis</li>
+                            <li class="text-capitalize text-light"><i class="far fa fa-check-circle"></i> consulting</li>
+                            <li class="text-capitalize text-light"><i class="far fa fa-check-circle"></i> brand planning</li>
+                            <li class="text-capitalize text-light"><i class="far fa fa-check-circle"></i> customer support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="list">
+                        <ul>
+                            <li class="text-capitalize text-light"><i class="far fa fa-check-circle"></i> Logo & Branding</li>
+                            <li class="text-capitalize text-light"><i class="far fa fa-check-circle"></i> Style guides</li>
+                            <li class="text-capitalize text-light"><i class="far fa fa-check-circle"></i> Motion graphics</li>
+                            <li class="text-capitalize text-light"><i class="far fa fa-check-circle"></i> UX/UI-design</li>
+                            <li class="text-capitalize text-light"><i class="far fa fa-check-circle"></i> Social media design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end section services -->
+
+
+
+
+<!-- start section customers -->
+<div id="customers">
+    <div class="bd-example">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators cical">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="parent">
+                            <div class="slider-elemants rounded text-center py-5 px-2">
+                                <div class="out-silder">
+                                    <h6 class="text-uppercase">Happy Customers</h6>
+                                    <img src="imgs/testimonial-1.jpg" class="img-fluid rounded-circle" alt="...">
+                                </div>
+                                <div class="slider-contant">
+                                    <h4>Marissa Mayer</h4>
+                                    <span class="text-uppercase">CEO, Yahoo</span>
+                                    <p>
+                                        Quo rem cumque facere modi beatae. Deleniti nisi, repellat quae aspernatur
+                                        consequatur consequuntur, fugit asperiores delectus beatae. Quae veniam,
+                                        quidem
+                                        cupiditate quia? Ut iste deleniti.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="parent">
+                            <div class="slider-elemants rounded text-center py-5 px-2">
+                                <div class="out-silder">
+                                    <h6 class="text-uppercase">Happy Customers</h6>
+                                    <img src="imgs/testimonial-2.jpg" class="img-fluid rounded-circle" alt="...">
+                                </div>
+                                <div class="slider-contant">
+                                    <h4>Mark Zuckerberg</h4>
+                                    <span class="text-uppercase">Founder & CEO, Facebook</span>
+                                    <p>
+                                        Quo rem cumque facere modi beatae. Deleniti nisi, repellat quae aspernatur
+                                        consequatur consequuntur, fugit asperiores delectus beatae. Quae veniam,
+                                        quidem
+                                        cupiditate quia? Ut iste deleniti.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev before" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next after" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- end section customers -->
+
+
+
+<!-- start section pricing -->
+<div id="pricing">
+    <div class="container">
+        <div class="head text-center">
+            <h1>c</h1>
+            <h2 class="text-capitalize">cheap prices</h2>
+            <p>We provide the best quality.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-left py-5 px-4">
+                    <h4>Starter</h4>
+                    <h3><span>$</span>9</h3>
+                    <p>Unlimited Connections</p>
+                    <p>24/7 Support</p>
+                    <p>Full SSL Protection</p>
+                    <p>Unlimited Channels</p>
+                    <a href="#" class="btn">sign up</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-left py-5 px-4">
+                    <h4>Silver</h4>
+                    <h3><span>$</span>19</h3>
+                    <p>Unlimited Connections</p>
+                    <p>24/7 Support</p>
+                    <p>Full SSL Protection</p>
+                    <p>Unlimited Channels</p>
+                    <a href="#" class="btn">sign up</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card card3 text-left py-5 px-4">
+                    <h4>Gold</h4>
+                    <h3><span>$</span>29</h3>
+                    <p>Unlimited Connections</p>
+                    <p>24/7 Support</p>
+                    <p>Full SSL Protection</p>
+                    <p>Unlimited Channels</p>
+                    <a href="#" class="btn">sign up</a>
+                    <div class="btn rounded-pill text-uppercase btn-sm text-light best">best value</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-left py-5 px-4">
+                    <h4>Platinum</h4>
+                    <h3><span>$</span>49</h3>
+                    <p>Unlimited Connections</p>
+                    <p>24/7 Support</p>
+                    <p>Full SSL Protection</p>
+                    <p>Unlimited Channels</p>
+                    <a href="#" class="btn">sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end section pricing -->
+
+
+
+<!-- start section contact -->
+<!-- <div id="contact" class="d-flex justify-space-between">
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <div class="map">
+                <div style="width: 100%">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.297247730267!2d31.308415904762352!3d30.114306711041156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815e160c714c5%3A0x4358c37d951d2ba5!2z2YXZitiv2KfZhiDYp9mE2YXYt9ix2YrYqQ!5e0!3m2!1sar!2seg!4v1659984500204!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="root py-5 px-5 col-lg-6 col-md-12">
+            <div class="address pt-5 px-5">
+                <h1>G</h1>
+                <h2 class="font-weight-bolder text-capitalize">Get In Touch</h2>
+                <p class="text-muted ">Let's work together.</p>
+            </div>
+
+            <form class="text-capitalize px-5">
+                <div class="form-group">
+                    <label for="exampleInputPassword1">your name</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">your Email </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">phone number</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary px-3 py-3 my-3 font-weight-bold">send massage</button>
+            </form>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+<section id="contact" class="d-flex justify-space-between">
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <div class="map">
+                <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6902.51024479762!2d31.31111248508405!3d30.115512406733657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815e160c714c5%3A0x4358c37d951d2ba5!2z2YXZitiv2KfZhiDYp9mE2YXYt9ix2YrYqQ!5e0!3m2!1sar!2seg!4v1660030289199!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="root col-lg-6 col-md-12">
+            <div class="container">
+                <div class="address pt-5 px-5">
+                    <h1>G</h1>
+                    <h2 class="font-weight-bolder text-capitalize">Get In Touch</h2>
+                    <p class="text-muted ">Let's work together.</p>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">your name</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">your Email </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">phone number</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary px-3 py-3 my-3 font-weight-bold">send massage</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section contact -->
+
+
+
+
+<!-- script file main.js -->
+<script src="js/main.js"></script>
+<!-- script link bootstrap.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- script link bootstrap popper.js-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+</body>
+</html>
